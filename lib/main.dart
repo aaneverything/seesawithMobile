@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'splash_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // print("Loading environment variables...");
+  // await dotenv.load(fileName: ".env");
+  // print("Environment variables loaded successfully.");
   runApp(const MyApp());
 }
 
